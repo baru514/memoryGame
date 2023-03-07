@@ -1,0 +1,78 @@
+.App {
+  max-width: 860px;
+  margin: 40px auto;
+}
+.kudos{
+  color:rgb(254, 114, 137);
+}
+button {
+  background: none;
+  border: 2px solid #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+}
+button:hover {
+  background: rgb(254, 114, 137);
+  color: #1b1523;
+}
+.card-grid{
+  max-width: 710px;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.card{
+  position:relative;
+  flex-basis: 25%;
+}
+
+.card img{
+  width: 90%;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card img:hover{
+  border: 2px solid gold;
+  opacity: 0.8;
+}
+.card .matched img{
+  opacity: 0.1;
+  transition: opacity 2s;
+  pointer-events: none;
+}
+
+.card .front {
+  transform: rotateY(90deg);
+  transition: transform ease-in 0.2s;
+  position: absolute;
+}
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+.card .back{
+  transition: transform ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped .back{
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
+
+span{
+  border: 1px solid gainsboro;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 2px;
+  margin-left: 5px;
+}
